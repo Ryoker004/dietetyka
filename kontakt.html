@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Kontakt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Kontakt.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		</head>
+	<body>
+	<header id="tytul">
+		<h1>KONTAKT</h1>
+	</header>
+		<nav>
+		<ul class="menu">
+			<li><a href="moje_hobby.html">Strona główna</a></li>
+			<li><a href="#">Potrawy</a>
+				<ul>
+					<li><a href="potrawy.html">Galeria</a></li>
+					<li><a href="przepisy.html">Tabele odżywcze</a></li>
+				</ul>
+			</li>
+			<li><a class="active" href="kontakt.html">Kontakt z nami</a></li> 
+		</ul>
+		</nav>
+		<article>
+			<h2>Formularz</h2>
+			----------------------------------------------------------------------
+			<form name="kontakt">
+				<label for="name">Imię</label>
+					<input type="text" id="name">
+				<p>
+				</p>
+				<label for="nazwisko">Nazwisko</label>
+					<input type="text" id="nazwisko">
+				<p>
+				</p>
+				<label for="mail">E-Mail</label>
+					<input type="text" id="mail" title="E-mail ma formę: twoja_nazwa@portal_internetowy.pl">
+				<p>
+				</p>
+				<label for="wiek">Wiek</label>
+					<input type="number" id="wiek" title="Musisz być pełnoletni by móc wykupić nasze usługi">
+				<p>
+				</p>
+				<label id="plec">Płeć:</label>
+					<input type="radio" name="plec">Meżczyzna
+					<input type="radio" name="plec">Kobieta
+				<p>
+				</p>
+				<label id="budowa">Budowa ciała: </label>
+				<select name="budowa">
+				<option title="Chudy, kościsty; ciężko takiej osobie przytyć">Ektomorfik</option>
+				<option title="Sylwetka ma kształt litery V; osoba dosyć szczupła, umięśniona">Mezomorfik</option>
+				<option title="Osoba grubsza, która łatwiej nabiera masy zarówno mięsniowej, jak i tłuszczowej; sylwetka w kształcie gruszki">Endomorfik</option>
+				</select>
+				<p>
+				</p>
+				<label>Jakie smaki najbardziej preferujesz?</label>
+				<p>
+				</p>
+				<input type="checkbox" name="smaki" value="Ostre">Ostre
+				<input type="checkbox" name="smaki" value="Łagodne">Łagodne<br>
+				<input type="checkbox" name="smaki" value="Gorzkie">Gorzkie
+				<input type="checkbox" name="smaki" value="Słodkie">Słodkie<br>
+				<input type="checkbox" name="smaki" value="Słone">Słone
+				<input type="checkbox" name="smaki" value="Umami">Umami<br>
+				<p>
+				</p>
+				<textarea id="komentarz" name="komentarz" cols="50" rows="10">Dodatkowe informacje...</textarea>
+				<p>
+				</p>
+				<input type="submit" value="Wyślij formularz">
+				<input type="reset" value="Wyczyść dane">
+				<p></p>
+				<a class="mail" href="mailto:s179995@student.pg.edu.pl">W razie pytań - wyślij do mnie e-mail: s179995@student.pg.edu.pl</a>
+			</form>
+			-----------------------------------------------------------------------
+		</article>
+		<footer>
+		<a href="#tytul">Wróć na górę strony</a>
+		</footer>
+		<script src="local.js"></script>
+		<script src="menu.js"></script>
+		<script src="nowy_div.js"></script>
+		<script src="nowy_wezel.js"></script>
+		<script src="tooltip.js"></script>
+		<script src="sessionStorage.js"></script>
+	</body>
+</html>

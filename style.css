@@ -1,0 +1,134 @@
+html {
+	background-color: #FFEBCD;
+}
+header {
+    background-color: #F4A460;
+    text-align: center;
+    margin: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 10px;
+	font-family: Apple Chancery, cursive;
+}
+nav {
+    width: 300px;
+    float: right;
+    text-align: center;
+	margin-bottom:60px;
+	margin-top: 60px;
+	margin-right: 10px;
+	background-color: #F4A460;
+}
+article {
+	margin-right: 310px;
+	margin-left: 30px;
+	font-family: Marker Felt, fantasy;
+	font-size: 30px;
+}
+footer {
+	margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+	background-color: #F4A460;
+	text-align: center;
+}
+ol {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ol > li {
+	padding: 10px;
+	margin-left: 60px;
+	margin-right: 70px;
+}
+ol > li > ul > li:hover {
+	background-color: #FFDEAD;
+}
+ol > li > ul > li:hover a {
+	color: #09C;
+}
+ol > li > ul > li > a {
+	border-top: 3px solid #FFF;
+	border-top-color: #808080;
+}
+ol > li > ul {
+	display: none;
+}
+ol > li:hover > ul {
+	display: block;
+}
+ol {
+	list-style-type: none;
+}
+ol a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+ol > li > a:hover {
+	color: #09C;
+}
+ol > li:hover {
+	background-color: #EEE;
+}
+ol > li > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+ol > li > ul > li > ul {
+	display: block;
+}
+ol > li > ul > li {
+	display: none;
+}
+ol > li {
+	background-color: #DEB887;
+	width: 150px; 
+}
+ol > li > ul > li > ul > li:hover {
+	color: #09C;
+}
+.active {
+	background-color: #DEB887;
+	font-style: oblique;
+}
+@media only screen and (max-width: 768px) {
+	nav {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+	}
+    article {
+        margin-top: 100px;
+		margin-right: 10px;
+    }
+	img { 
+		display: table-cell;
+		max-width: 100%; 
+		max-height: 50%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	nav {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+	}
+    article {
+        margin-top: 100px;
+		margin-right: 10px;
+		float: none;
+    }
+	img { 
+		display: table-cell;
+		max-width: 100%; 
+		max-height: 50%;
+	}
+}
+

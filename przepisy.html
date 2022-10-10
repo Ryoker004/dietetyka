@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Tabelki odżywcze</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="tabelki.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 id="tytul">Przykładowe tabele wartości odżywczych</h1>
+		</header>
+		<nav>
+		<ul class="menu">
+			<li><a href="moje_hobby.html">Strona główna</a></li>
+			<li><a href="#">Potrawy</a>
+				<ul>
+					<li><a href="potrawy.html">Galeria</a></li>
+					<li><a class="active" href="przepisy.html">Tabele odżywcze</a></li>
+				</ul>
+			</li>
+			<li><a href="kontakt.html">Kontakt z nami</a></li> 
+		</ul>
+		</nav>
+		<article>
+		<h2>Tabele żywności</h2>
+			<div id="tabelki">
+			<table>
+				<tr>
+					<td colspan="2" class="nazwa"><b>Udko z kurczaka (na 100g)</b></td>
+				</tr>
+				<tr>
+					<td class="kalorie">Kalorie</td> <td>158 kcal</td>
+				</tr>
+				<tr>
+					<td>Białko</td> <td>16,81g</td>
+				</tr>
+				<tr>
+					<td>Tłuszcze</td> <td>10,19g (w tym 2,9g kwasów tłuszczowych nasyconych)</td>
+				</tr>
+				<tr>
+					<td>Węglowodany</td> <td>0,0g</td>
+				</tr>
+				<tr>
+					<td>Błonnik</td> <td>0,0g</td>
+				</tr>
+				<tr>
+					<td>Sól</td> <td>0,0g</td>
+				</tr>
+			</table>
+			<p></p>
+			<table>
+				<tr>
+					<td colspan="2" class="nazwa"><b>Ziemniaki (na 100g)</b></td>
+				</tr>
+				<tr>
+					<td class="kalorie">Kalorie</td> <td>79 kcal</td>
+				</tr>
+				<tr>
+					<td>Białko</td> <td>1,9g</td>
+				</tr>
+				<tr>
+					<td>Tłuszcze</td> <td>00,11g (w tym 0,0g kwasów tłuszczowych nasyconych)</td>
+				</tr>
+				<tr>
+					<td>Węglowodany</td> <td>16,8g</td>
+				</tr>
+				<tr>
+					<td>Błonnik</td> <td>1,5g</td>
+				</tr>
+				<tr>
+					<td>Sól</td> <td>0,0g</td>
+				</tr>
+			</table>
+			<p></p>
+			<table>
+				<tr>
+					<td colspan="2" class="nazwa"><b>Jabłka (na 100g)</b></td>
+				</tr>
+				<tr>
+					<td class="kalorie">Kalorie</td> <td>50 kcal</td>
+				</tr>
+				<tr>
+					<td>Białko</td> <td>0,4g</td>
+				</tr>
+				<tr>
+					<td>Tłuszcze</td> <td>00,41g (w tym 0,0g kwasów tłuszczowych nasyconych)</td>
+				</tr>
+				<tr>
+					<td>Węglowodany</td> <td>10,1g</td>
+				</tr>
+				<tr>
+					<td>Błonnik</td> <td>2,0g</td>
+				</tr>
+				<tr>
+					<td>Sól</td> <td>0,0g</td>
+				</tr>
+			</table>
+			<p></p>
+			<table>
+				<tr>
+					<td colspan="2" class="nazwa"><b>Łosoś (na 100g)</b></td>
+				</tr>
+				<tr>
+					<td class="kalorie">Kalorie</td> <td>201 kcal</td>
+				</tr>
+				<tr>
+					<td>Białko</td> <td>19,9g</td>
+				</tr>
+				<tr>
+					<td>Tłuszcze</td> <td>13,61g (w tym 2,9g kwasów tłuszczowych nasyconych)</td>
+				</tr>
+				<tr>
+					<td>Węglowodany</td> <td>0,0g</td>
+				</tr>
+				<tr>
+					<td>Błonnik</td> <td>0,0g</td>
+				</tr>
+				<tr>
+					<td>Sól</td> <td>0,1g</td>
+				</tr>
+			</table>
+			<p></p>
+			</div>
+			<svg style="border:solid 1px black" width="450" height="300" xmlns="http://www.w3.org/2000/svg">
+				<circle fill="#7f3f00" stroke-width="3" cx="80" cy="80" r="50" stroke="#000000"/>
+				<circle fill="khaki" stroke-width="3" cx="80" cy="80" r="50" transform="scale(2)"/>
+				</svg>
+				<p></p>
+				<svg>
+				<circle id="kolo" r="30" cx="50" cy="50" fill="orange" />
+				<animate 
+				xlink:href="#kolo"
+				attributeName="cx"
+				from="50"
+				to="200" 
+				dur="1s"
+				begin="click"
+				fill="freeze"/>
+                </svg>
+			<div id="odnosniki">
+				Powyższe tabelki pokazują jedynie makro (wartości odżywcze) przykładowych produktów. Oczywiście - nie trzeba uczyć się tego na pamięć :D
+				Istnieją strony internetowe, na których bardzo szybko można sprawdzić wartości odżywcze produktu, który nas interesuje.
+				Od siebie mogę polecić następujące strony:
+				<p></p>
+				<a href="http://www.ilewazy.pl/" target="_blank">IleWazy.pl</a>
+				<p></p>
+				<a href="https://kalkulatorkalorii.net/" target="_blank">KalkulatorKalorii.net</a>
+				<p></p>
+				<a href="https://www.tabele-kalorii.pl" target="_blank">Tabele-Kalorii.pl</a>
+				<p></p>
+			</div>
+		</article>
+		<footer>
+			<a href="#tytul">Wróć na górę strony</a>
+		</footer>
+		<script src="menu.js"></script>
+	</body>
+</html>
