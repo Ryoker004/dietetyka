@@ -13,27 +13,66 @@ header {
 	font-family: Apple Chancery, cursive;
 	font-size: 30px
 }
+.obrazki {
+	display: flex;
+	flex-direction: column;
+}
+
+.obrazek {
+	max-width: 600px;
+	height: auto;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+#formularz {
+    margin-left: 500px;
+    margin-top: 200px;
+    margin-right: 600px;
+    background-color: yellow;
+    box-shadow: 3px 3px 10px, -3px 3px 10px, 3px -3px 10px;
+}
 nav {
-	float: right;
+    width: 300px;
+    float: right;
     text-align: center;
-	margin-right: 120px;
-	margin-top: 100px;
-	width: 100px;
-	height: 250px;
+	margin-bottom:60px;
+	margin-top: 60px;
+	margin-right: 10px;
+	background-color: #F4A460;
+}
+ol {
+	list-style-type: none;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ol > li {
+	padding: 10px;
+	margin-left: 60px;
+	margin-right: 70px;
+}
+ol > li > ul > li:hover {
+	background-color: #FFDEAD;
+}
+ol > li > ul > li:hover a {
+	color: #09C;
+}
+ol > li > ul > li > a {
+	border-top: 3px solid #FFF;
+	border-top-color: #808080;
+}
+ol > li > ul {
+	display: none;
+}
+ol > li:hover > ul {
+	display: block;
 }
 article {
 	margin-right: 500px;
 	margin-left: 200px;
 	text-align: center;
-}
-img {
-	border: 0;
-}
-h1 {
-	font-size: 35px;
-}
-h3 {
-	font-family: Adventor, URW;
 }
 footer {
 	margin-bottom: 50px;
@@ -42,73 +81,58 @@ footer {
 	background-color: #F4A460;
 	text-align: center;
 }
+ol a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+ol > li > a:hover {
+	color: #09C;
+}
+ol > li:hover {
+	background-color: #EEE;
+}
+ol > li > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+ol > li {
+	background-color: #DEB887;
+	width: 150px; 
+}
+ol > li > ul > li > ul > li:hover {
+	color: #09C;
+}
 .active {
-	background-color: #8B0000;
+	background-color: #DEB887;
 	font-style: oblique;
 }
-.menu li {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	width: 100px;
-	background-color: #f1f1f1;
-	border: 3px solid #555;
-}
-.menu li > ul {
-	border: 1px solid #555;
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	width: 100px;
-	background-color: #f1f1f1;
-}
-.menu li > a {
-	display: block;
-	width: 70px;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-.menu li > a:hover {
-	background-color: #555;
-	color: white;
-}
 @media only screen and (max-width: 768px) {
-	.menu {
-		margin-left: -105px;
+	nav {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+	}
+    article {
+        margin-left: auto;
 		margin-right: auto;
-		margin-top: -50px;
-	}
-	article {
-		margin-top: 380px;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-	img { 
-		display: table-cell;
-		max-width: 100%; 
-		max-height: 50%;
+		float: none;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 	nav {
-		margin-left: 80px;
-		margin-right: 100px;
-		margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
 	}
-	#tabelki {
-		margin-top: 325px;
-		margin-left: 30px;
-	}
-	article {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-	img { 
-		margin-left: auto;
+    article {
+        margin-left: auto;
 		margin-right: auto;
+		float: none;
+    }
+	img { 
 		display: table-cell;
 		max-width: 100%; 
-		max-height: 50%;
 	}
 }
